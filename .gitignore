@@ -1,0 +1,7 @@
+node_modules
+dist
+uploads
+outputs
+data.db
+*.log
+.env

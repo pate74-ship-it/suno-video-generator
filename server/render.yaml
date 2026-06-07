@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: suno-musikvideo-generator
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+    disk:
+      name: uploads
+      mountPath: /app/uploads
+      sizeGB: 1
